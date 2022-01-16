@@ -6,21 +6,25 @@
 }
 .conteiner {
   min-width: 320px;
+  max-width: 100%;
+  min-height: 568px;
+  max-height: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  align-content: stretch;
+  text-align: center;
+  align-content: center;
   flex-wrap: nowrap;
   text-align: center;
   align-items: center;
-  margin: 9% 0;
+  background-color: rgb(241, 239, 239);
 }
 .form-class {
   display: flex;
 }
 .conteiner-input-first {
-  margin: 10px;
+  margin: 15px 10px;
   display: flex;
   flex-wrap: nowrap;
 }
@@ -37,26 +41,11 @@
   align-items: center;
   justify-content: center;
   flex-wrap: nowrap;
-  margin: 10px 0;
-}
-.check-name {
-  margin-right: 5px;
-}
-.check {
-  margin: 0px 5px;
-}
-.a-first::after {
-  content: "&";
-  margin: 0 5px;
-}
-.text-class {
-  font-size: 15px;
-  margin-bottom: 1.2em;
+  margin: 5px 0;
 }
 .h-class {
   font-size: 26px;
-  margin-bottom: 1.2em;
-  overflow: hidden;
+  margin-bottom: 10px;
 }
 .h-class::before,
 .h-class::after {
@@ -65,16 +54,20 @@
   vertical-align: middle;
   width: 96px;
   height: 2px;
-  border: solid black;
+  border: solid rgb(165, 161, 161);
   border-width: 0 10px;
   box-sizing: border-box;
-  background-color: black;
+  background-color: rgb(165, 161, 161);
 }
 .h-class::before {
   margin-right: 20px;
 }
 .h-class::after {
   margin-left: 20px;
+}
+.text-class {
+  font-size: 15px;
+  color: rgb(122, 121, 121);
 }
 .first-name,
 .last-name,
@@ -83,6 +76,9 @@
 .conf-pass-name {
   min-height: 35px;
   padding-left: 15px;
+  border-radius: 5px;
+  border: 0;
+  opacity: 0.8;
 }
 .first-name,
 .last-name {
@@ -93,11 +89,37 @@
   margin-right: 10px;
 }
 .mail-name,
-.pass-name,
-.conf-pass-name {
+.pass-name {
   align-self: stretch;
   margin-bottom: 15px;
 }
+.conf-pass-name {
+  align-self: stretch;
+  margin-bottom: 5px;
+}
+.check-name {
+  margin-right: 6px;
+}
+.check {
+  margin: 0px 6px;
+  color: rgb(122, 121, 121);
+}
+.a-first::after {
+  content: "&";
+  margin: 0 10px;
+}
+.a-first,
+.a-second {
+  text-decoration: none;
+  color: rgb(87, 182, 87);
+}
 .batt-name {
-  
+  width: 94%;
+  margin: 10px 15px 10px 10px;
+  min-height: 35px;
+  background-color: rgb(87, 182, 87);
+  border: 0;
+  border-radius: 3px;
+  color: beige;
+  font-weight: bold;
 }
