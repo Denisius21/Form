@@ -1,5 +1,103 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-size: 0;
+}
+.conteiner {
+  min-width: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-content: stretch;
+  flex-wrap: nowrap;
+  text-align: center;
+  align-items: center;
+  margin: 9% 0;
+}
+.form-class {
+  display: flex;
+}
+.conteiner-input-first {
+  margin: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.conteiner-input-second {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin: 10px;
+}
+.conteiner-input-last {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin: 10px 0;
+}
+.check-name {
+  margin-right: 5px;
+}
+.check {
+  margin: 0px 5px;
+}
+.a-first::after {
+  content: "&";
+  margin: 0 5px;
+}
+.text-class {
+  font-size: 15px;
+  margin-bottom: 1.2em;
+}
+.h-class {
+  font-size: 26px;
+  margin-bottom: 1.2em;
+  overflow: hidden;
+}
+.h-class::before,
+.h-class::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 96px;
+  height: 2px;
+  border: solid black;
+  border-width: 0 10px;
+  box-sizing: border-box;
+  background-color: black;
+}
+.h-class::before {
+  margin-right: 20px;
+}
+.h-class::after {
+  margin-left: 20px;
+}
+.first-name,
+.last-name,
+.mail-name,
+.pass-name,
+.conf-pass-name {
+  min-height: 35px;
+  padding-left: 15px;
+}
+.first-name,
+.last-name {
+  align-self: stretch;
+  width: 155px;
+}
+.first-name {
+  margin-right: 10px;
+}
+.mail-name,
+.pass-name,
+.conf-pass-name {
+  align-self: stretch;
+  margin-bottom: 15px;
+}
+.batt-name {
+  
 }
