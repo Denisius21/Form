@@ -1,32 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Register</title>
-  <link rel="stylesheet" href="./assets/Css/reset.css">
-  <link rel="stylesheet" href="./assets/Css/style.css">
-</head>
-<body>
-  <article class="conteiner">
-    <h1 class="h-class">Register</h1>
-    <p class="text-class">Create your account. It's free and only takes a minute.</p>
-    <form action="">
-      <fieldset class="conteiner-input">
-      <input type="text" autofocus required placeholder="First Name" name="First Name" class="first-name">
-      <input type="text" placeholder="Last Name" required name="Last Name" class="last-name">
-      <input type="email" autocomplete="email" required placeholder="Email" name="email" class="mail-name">
-      <input type="password" placeholder="Password" required name="password" class="pass-name">
-      <input type="password" placeholder="Confirm Password" required name="confirm password" class="conf-pass-name">
-      <input type="checkbox"  required id="check" class="check-name">
-      <label for="check">I accept the </label>
-      <a href="#" class="a-first">Terms of Use</a>
-      <a href="#" class="a-second">Privacy Policy.</a>
-      <button class="batt-name">Register Now</button>
-    </fieldset>
-    </form>
-  </article>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="./assets/Css/reset.css" />
+    <link rel="stylesheet" href="./assets/Css/style.css" />
+  </head>
+  <body>
+    <article class="conteiner">
+      <h1 class="h-class">Register</h1>
+      <p class="text-class">
+        Create your account. It's free and only takes a minute.
+      </p>
+      <form .class="form-class" action="">
+        
+          <fieldset class="conteiner-input-first">
+            <input
+              type="text"
+              autofocus
+              required
+              pattern="[a-zA-Z0-9]+"
+              placeholder="First Name"
+              name="First Name"
+              class="first-name"
+            />
+            <input
+              type="text"
+              placeholder="Last Name"
+              pattern="[a-zA-Z0-9]+"
+              required
+              name="Last Name"
+              class="last-name"
+            />
+          </fieldset>
+          <fieldset class="conteiner-input-second">
+          <input
+            type="email"
+            autocomplete="email"
+            pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$"
+            required
+            placeholder="Email"
+            name="email"
+            class="mail-name"
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            required
+            name="password"
+            class="pass-name"
+          />
+          <input
+            type="password"
+            placeholder="Confirm Password"
+            required
+            name="confirm password"
+            class="conf-pass-name"
+          />
+        </fieldset>
+          <fieldset class="conteiner-input-last">
+            <input type="checkbox" required id="check" class="check-name" />
+            <label for="check" class="check"> I accept the </label>
+            <a href="#" class="a-first">Terms of Use</a>
+            <a href="#" class="a-second">Privacy Policy.</a>
+          </fieldset>
+          <button class="batt-name">Register Now</button>
+        </fieldset>
+      </form>
+    </article>
+  </body>
 </html>
